@@ -1,0 +1,227 @@
+
+/* ------------------------ GLOBAL ------------------------ */
+
+* {
+   margin: 0;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+   margin: 32px;
+}
+
+h1 {
+   font-weight: bold;
+   font-size: xxx-large;
+   text-align: center;
+}
+
+h2 {
+   font-weight: bold;
+   text-align: center;
+   font-size: x-large;
+   color: #B42D52;
+}
+
+a {
+   color: rgb(190, 190, 190);
+   text-decoration: none;
+}
+
+a:hover {
+   color: #B42D52;
+   text-decoration: none; 
+   margin-top: 6px;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+}
+
+section {
+   padding: 8px;
+}
+
+/* ------------------------ PERSONAL INFO ------------------------ */
+
+.personal-info {
+   padding: 32px;
+   display: flex;
+   flex-direction: column;
+   background-color: #31313D;
+   color: white;
+}
+
+#foto {
+   align-self: center;
+   border-radius: 50%;
+   border-width: 8px;
+   border-color: #B42D52;
+   border-style: solid;
+   width: 50%;
+   margin: 16px;
+}
+
+.personal-info .section-header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.personal-contact-item {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.personal-contact-item img {
+   width: 5%;
+   height: 5%;
+   margin: 8px 8px 8px 0px;
+}
+
+.personal-info .divider {
+   width: 100%;
+   margin-left: 16px;
+   height: 2px;
+   background-color: #B42D52;
+   border: none;
+}
+
+.personal-ability-item {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin: 8px;
+}
+
+.personal-ability-range {
+   margin: 0 8px 0 16px;
+   width: 80%;
+   height: 6px;
+   background-color: rgb(190, 190, 190);
+}
+
+.personal-ability-value-swift {
+   border: none;
+   width: 80%;
+   height: 6px;
+   background-color: #B42D52;
+}
+
+.personal-ability-value-kotlin {
+   border: none;
+   width: 60%;
+   height: 6px;
+   background-color: #B42D52;
+}
+
+.personal-ability-value-java {
+   border: none;
+   width: 25%;
+   height: 6px;
+   background-color: #B42D52;
+}
+
+.personal-ability-value-python {
+   border: none;
+   width: 20%;
+   height: 6px;
+   background-color: #B42D52;
+}
+
+.personal-info p {
+   color: rgb(190, 190, 190);
+}
+
+.icons {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin: 32px;
+   justify-items: center;
+}
+
+.icon {
+   width: 50px;
+   height: 50px;
+   margin: 16px;
+}
+
+/* ------------------------ PROFESSIONAL INFO ------------------------ */
+
+.professional-info {
+   display: flex;
+   flex-direction: column;
+   color: #31313D;
+}
+
+.professional-info h3 {
+   color: #B42D52;
+   font-weight: bolder;
+}
+
+.professional-info .section-header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.professional-info .divider {
+   width: 100%;
+   margin-left: 16px;
+   height: 2px;
+   background-color: #31313D;
+   border: none;
+}
+
+.professional-info h4 {
+   color: #B42D52;
+   font-weight: lighter;
+}
+
+.professional-info li {
+   font-weight: bold;
+}
+
+.professional-info p {
+   font-size: medium;
+   color: #B42D52;
+}
+
+.professional-info span {
+   font-size: smaller;
+   font-weight: lighter;
+   color: rgb(70, 70, 70);
+}
+
+#qrcode {
+   align-self: center;
+   width: 30%;
+   margin: 32px;
+}
+
+@media screen and (max-width: 900px) {
+   .container {
+      grid-template-columns: 1fr;
+   }
+
+   .icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 32px;
+   }
+} 
+
+@media screen and (max-width: 500px) {
+   .icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 32px;
+   }
+}
